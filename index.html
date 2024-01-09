@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/viewz-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/netflux.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="nav" id="nav">
+        <img src="images/viewz-logo.png" alt="" class="nav_logo">
+        <div class="search">
+            <button id="redirectButton"> Recherchez un film / série</button>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="banner">
+        <div class="banner_contents">
+            <h1 class="banner_title">Star Trek : Discovery</h1>
+            <div class="banner_buttons">
+                <button class="banner_button">Play</button>
+                <button class="banner_button">My List</button>
+            </div>
+            <div class="banner_description">
+                Après un siècle de silence, une guerre éclate entre la Fédération et l'Empire klingon. Au cœur de ce
+                conflit, un officier en disgrâce...
+            </div>
+        </div>
+        <div class="banner_fadeBottom"></div>
+    </div>
+    <!-- SERIES ORIGINALES -->
+    <div class="row">
+        <h2>SERIES ORIGINALES</h2>
+        <div class="row_posters">
+            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=ebI7b7NoH54')" />
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=vOzt9T2Ji3s')"/>
+            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=tUqBbkxFFfI')"/>
+            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=8ctRjR_DWAg')"/>
+            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=xVYAh0MQtiI')"/>
+            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=FtpRZghkRlI')"/>
+            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=UksT5I1lvJM')"/>
+            <img src="images/large-movie8.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=m72aT-pvdiI')"/>
+            <img src="images/large-movie9.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=b0CqOCLdeK4')"/>
+            <img src="images/large-movie10.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=jerFRSQW9g8')"/>
+        </div>
+    </div>
+    <!-- NOUVELLES SORTIES -->
+    <div class="row">
+        <h2>NOUVELLES SORTIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=B_SeNjJ5qyk')"/>
+            <img src="images/small-movie2.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=Qh8LQUDEbyc')"/>
+            <img src="images/small-movie3.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=Yce10h0cfCE')"/>
+            <img src="images/small-movie4.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=QolEkXbxupw')"/>
+            <img src="images/small-movie5.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=X_mSpyPVVzk')"/>
+            <img src="images/small-movie6.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=uREoeT1r57Q')"/>
+            <img src="images/small-movie7.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=rf_d8jA89_o')"/>
+            <img src="images/small-movie8.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=Eam4YDTTkdI')"/>
+        </div>
+    </div>
+    <!-- MIEUX NOTES -->
+    <div class="row">
+        <h2>MIEUX NOTES</h2>
+        <div class="row_posters">
+            <img src="images/large-movie11.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=mK02TkYBg9Y')"/>
+            <img src="images/large-movie12.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=UQDvqI7I7q4')"/>
+            <img src="images/large-movie13.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=P0ocuwCt0qs')"/>
+            <img src="images/large-movie14.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=GCW0KFA-yAM')"/>
+            <img src="images/large-movie15.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=kz34RaRBczI')"/>
+            <img src="images/large-movie16.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=yPmOnBX_7Ww')"/>
+            <img src="images/large-movie17.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=DRaLQ3kKz_k')"/>
+            <img src="images/large-movie18.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=hkir9oZs0M0')"/>
+            <img src="images/large-movie19.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=Z4DqUIaMUIE')"/>
+            <img src="images/large-movie20.jpg" alt="" class="row_poster row_posterLarge" onclick="openTrailer('https://www.youtube.com/watch?v=Soepd523tFk')"/>
+        </div>
+    </div>
+
+    <!-- VOTRE SELECTION -->
+    <div class="row">
+        <h2>VOTRE SELECTION</h2>
+        <div class="row_posters">
+            <img src="images/small-movie9.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=9tR6oOlnkw4')"/>
+            <img src="images/small-movie10.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=BLJSN_UNqbc')"/>
+            <img src="images/small-movie11.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=2oOzWcbVf1c')"/>
+            <img src="images/small-movie12.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=xPq1fjg7yxc')"/>
+            <img src="images/small-movie13.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=HNXyorwF3kI')"/>
+            <img src="images/small-movie14.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=W2xLuOCvtQo')"/>
+            <img src="images/small-movie15.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=Jm_Bb5hTwkY')"/>
+            <img src="images/small-movie16.jpg" alt="" class="row_poster row_posterSmall" onclick="openTrailer('https://www.youtube.com/watch?v=rLKo9TCxv5Q&t=4s')"/>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
