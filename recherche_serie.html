@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewz | Recherche Serie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/viewz-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Viewz Serie</h1>
+        <button id="buttonLoad1" class="buttonLoad" onclick="redirectToAjoutFilm()"> AJOUTER UN FILM / UNE SERIE </button>
+
+    </header>
+
+    <nav>
+        <ul class="tabs">
+            <li onclick="redirectToAccueil()">Accueil</li>
+            <li onclick="redirectToFilm()">Film</li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <div id="accueil" class="tab-content">
+            <h2>Bienvenue sur Viewz !</h2>
+            <p>Découvrez notre sélection de films et séries.</p>
+        </div>
+
+            <form id="films" method="post" action="">
+                <label for="genre">Genre :</label>
+                <select id="genre" name="genre">
+                    <option value="tous">Tous</option>
+                    <option value="action">Action</option>
+                    <option value="drame">Drame</option>
+                    <option value="comedie">Comédie</option>
+                    <option value="fantastique">Fantastique</option>
+                </select>
+
+                <label for="titre">Titre :</label>
+                <input type="text" id="titre" name="titre" placeholder="Rechercher par titre">
+
+                <label for="tri">Trier par :</label>
+                <select id="tri" name="tri">
+
+                    <option value="note">Note</option>
+                    <option value="duree">saison(s)</option>
+                </select>
+
+                <label for="ordre">Ordre :</label>
+                <select id="ordre" name="ordre">
+                    <option value="asc">Croissant</option>
+                    <option value="desc">Décroissant</option>
+                </select>
+
+                <button id="buttonLoad2" type="button" class="buttonLoad" onclick="loadMovies()">Rechercher</button>
+            </form>
+        </div>
+
+        <!-- Espace pour afficher les résultats des films -->
+        <div id="resultats-films"></div>
+
+        <!-- Espace pour afficher les résultats des séries -->
+        <div id="resultats-series" style="display:none;"> <!-- Initialement caché -->
+            <h2>Résultats des séries</h2>
+            <div id="resultats-series-content"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

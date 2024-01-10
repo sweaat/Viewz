@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewz | Ajout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/viewz-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Viewz Ajout</h1>
+        <button id="buttonLoad1" class="buttonLoad" onclick="redirectToFilm()">Revenir au recherche</button>
+    </header>
+
+    <form id="add-form">
+        <h1>AJOUTER UN / UNE :</h1>
+        <select id="tri" name="tri">
+            <option value="film">Film</option>
+            <option value="serie">Série</option>
+        </select>
+
+        <h1>VEUILLEZ SAISIR LE TITRE DE VOTRE FILM / SÉRIE</h1>
+        <input type="text" name="titre" class="input" placeholder="Titre">
+
+        <h1>VEUILLEZ SAISIR LA DATE DE SORTIE (AAAA-MM-JJ)</h1>
+        <input type="text" name="dateSortie" class="input" placeholder="Date de sortie">
+
+        <h1>VEUILLEZ SAISIR LE RÉALISATEUR DE VOTRE FILM / SÉRIE</h1>
+        <input type="text" name="realisateur" class="input" placeholder="Réalisateur">
+
+        <h1>VEUILLEZ SAISIR LE GENRE (ACTION, COMEDIE...)</h1>
+        <input type="text" name="genre" class="input" placeholder="Genre">
+
+        <h1>VEUILLEZ SAISIR UNE DESCRIPTION DE VOTRE FILM / SÉRIE</h1>
+        <input type="text" name="description" class="input" placeholder="Description">
+
+        <h1>VEUILLEZ SAISIR LA NOTE DE VOTRE FILM / SÉRIE</h1>
+        <input type="text" name="note" class="input" placeholder="Note">
+
+        <h1>VEUILLEZ SAISIR LA DURÉE EN MINUTES DE VOTRE FILM / OU LE NOMBRE DE SAISONS DE VOTRE SÉRIE</h1>
+        <input type="text" name="duree" class="input" placeholder="Durée">
+
+        <h1></h1>
+
+        <button id="buttonLoad2" type="submit" class="buttonLoad">Ajouter</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

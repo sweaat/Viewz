@@ -165,3 +165,177 @@ body {
     background-color: #d6d6d6;
     transition: all 0.2s;
 }
+
+header {
+    background-color: #111;
+    color: #4A4081;
+    text-align: center;
+    text-shadow: 1px 1px 2px, 0 0 1em #4A4081, 0 0 0.2em #111;
+    padding: 1em;
+    font-size: 2.5em;
+}
+
+.tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+}
+
+.tabs li {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #4A4081;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs li:hover {
+    background-color: #7163c4;
+    color: #111;
+}
+
+#main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.tab-content {
+    /* Changé à une teinte de gris-violet */
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease;
+    color: #4A4081;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tab-content h2 {
+    color: #4A4081;
+    /* Changé à une teinte de bleu */
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+select,
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #181818;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #5e52a3;
+}
+
+#resultats-films,
+#resultats-films-accueil {
+    margin-top: 20px;
+    color: #fff;
+}
+
+nav {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#add-form h1 {
+    color: #fff;
+}
+
+.buttonLoad {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #5e52a3;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#buttonLoad1 {
+    position: relative;
+    left : 790px;
+}
+
+#buttonLoad2 {
+    position: relative;
+    left : 870px;
+}
+
+.buttonLoad:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.buttonLoad:hover .icon {
+    transform: translate(4px);
+}
+
+.buttonLoad:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.buttonLoad::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
